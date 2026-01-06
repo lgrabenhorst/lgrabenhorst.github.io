@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <title>Ubuntu Garten e.V.</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <!-- PicoCSS -->
+  <link
+    rel="stylesheet"
+    href="https://unpkg.com/@picocss/pico@latest/css/pico.min.css"
+  />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Agbalumo&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="custom.css">
+  <style>
+    /* Page layout tweaks */
+    main {
+      max-width: 960px;
+      margin: 0 auto;
+      padding-bottom: 6rem; /* space so content not hidden behind info box */
+    }
+
+    /* Fixed info window (bottom-right) */
+    .info-window {
+      position: fixed;
+      right: 1.5rem;
+      bottom: 1.5rem;
+      max-width: 320px;
+      z-index: 999;
+    }
+
+    /* Make info window a bit smaller on mobile */
+    @media (max-width: 768px) {
+      .info-window {
+        left: 1rem;
+        right: 1rem;
+        max-width: none;
+      }
+    }
+  </style>
+</head>
+<body>
+  <!-- Header / Navigation -->
+  <header class="container">
+    <nav>
+      <ul>
+        <li><strong>Ubuntu Interkultureller Garten e.V. 🌻</strong></li>
+      </ul>
+      <ul>
+        <li><a href="#about">Über uns</a></li>
+        <li><a href="#blog">Aktuelles</a></li>
+        <li><a href="#get-involved">Mitmachen</a></li>
+        <li><a href="#contact" role="button">Kontakt</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Main content -->
+  <main class="container">
+    <!-- Hero / Intro -->
+    <section id="about">
+      <h1>🌸🌻 Herzlich willkommen auf unserer Seite! 🌾🌳</h1>
+      <figure class="half-width-center">
+        <img src="content/kenan-kitchen-Bbq3H7eGids-unsplash.jpg" alt="A test image.">
+        <figcaption>
+          A beautiful landscape captured in the Alps. 
+          <a href="https://unsplash.com/de/fotos/grun-belaubte-pflanzen-in-der-nahe-von-baumen-Bbq3H7eGids">Source</a>
+        </figcaption>
+      </figure>
+      <p>
+        Our charity garden project transforms unused urban spaces into thriving
+        community gardens. We grow fresh produce, host educational workshops,
+        and build stronger neighborhoods together.
+      </p>
+      <p>
+        This blog shares our progress, stories from volunteers, and updates on
+        how the garden is helping local families.
+      </p>
+    </section>
+
+    <hr />
+
+    <!-- Blog posts -->
+    <section id="blog">
+      <h2>Aktuelles</h2>
+
+      <!-- Post 1 -->
+      <article>
+        <header>
+          <h3>Breaking Ground: Turning Vacant Lots into Green Spaces</h3>
+          <small>Posted on March 12, 2026 · by Alex (Project Coordinator)</small>
+        </header>
+        <p>
+          Today we officially broke ground on our first community garden plot!
+          What was once an overgrown, unused lot is now on its way to becoming
+          a shared space for fresh produce, learning, and connection. Volunteers
+          helped clear debris, mark out beds, and plan irrigation lines.
+        </p>
+        <p>
+          Local residents stopped by to share ideas on what they’d like to grow:
+          from tomatoes and peppers to medicinal herbs and pollinator-friendly
+          flowers. The enthusiasm reminded us why this project matters: it’s not
+          just about food, it’s about community ownership and pride.
+        </p>
+        <footer>
+          <details>
+            <summary>Read more</summary>
+            <p>
+              Our next steps involve testing the soil, adding compost, and
+              building raised beds to make the garden accessible for all ages
+              and abilities. We’re also setting aside a section of the garden
+              that will be dedicated to donations for the local food pantry.
+            </p>
+          </details>
+        </footer>
+      </article>
+
+      <hr />
+
+      <!-- Post 2 -->
+      <article>
+        <header>
+          <h3>From Seed to Table: First Harvest for the Food Pantry</h3>
+          <small>Posted on April 27, 2026 · by Maya (Volunteer)</small>
+        </header>
+        <p>
+          Our first harvest exceeded expectations! Together, volunteers and
+          neighbors picked over 80 pounds of fresh produce: kale, lettuce,
+          radishes, and spring onions. The very next morning, we delivered boxes
+          of vegetables to the community food pantry.
+        </p>
+        <p>
+          Pantry staff told us that many visitors are excited to receive fresh
+          produce and have asked for recipes and cooking tips. In response,
+          we’re planning simple cooking demonstrations right in the garden,
+          showing how to make healthy meals with what we grow.
+        </p>
+        <footer>
+          <details>
+            <summary>Read more</summary>
+            <p>
+              Beyond the numbers, the biggest success has been the sense of
+              shared accomplishment. Children helped wash and bundle the
+              vegetables, and several families have signed up for garden plots
+              of their own. We’re already planning a “Harvest Celebration” to
+              mark the end of the season and celebrate what we’ve grown together.
+            </p>
+          </details>
+        </footer>
+      </article>
+
+      <hr />
+
+      <!-- Post 3 -->
+      <article>
+        <header>
+          <h3>Workshops in the Garden: Learning and Growing Together</h3>
+          <small>Posted on May 10, 2026 · by Sam (Education Lead)</small>
+        </header>
+        <p>
+          The garden is now a living classroom. Over the past month, we’ve
+          hosted weekend workshops on composting, seed saving, organic pest
+          management, and container gardening for apartment dwellers.
+        </p>
+        <p>
+          Attendance has been fantastic. Many participants are first-time
+          gardeners who want to grow even a small amount of food at home. We’ve
+          focused on low-cost, practical techniques and shared starter kits
+          with seeds and soil for those who need them.
+        </p>
+        <footer>
+          <details>
+            <summary>Read more</summary>
+            <p>
+              Looking ahead, we’re developing youth-focused programs, including
+              “Garden Science” sessions where kids can explore soil life, plant
+              biology, and pollinators. By connecting environmental education
+              with hands-on activities, we hope to inspire the next generation
+              of community leaders and stewards.
+            </p>
+          </details>
+        </footer>
+      </article>
+    </section>
+
+    <hr />
+
+    <!-- Get involved -->
+    <section id="get-involved">
+      <h2>Mitmachen</h2>
+      <p>
+        There are many ways to support the Garden Charity Project, whether you
+        can give your time, your skills, or a financial contribution.
+      </p>
+      <div class="grid">
+        <article>
+          <h3>Mitglied werden</h3>
+          <p>
+            Join us for weekly garden days, harvest events, or workshop
+            support. No experience needed—just a willingness to learn and get
+            your hands in the soil.
+          </p>
+          <ul>
+            <li><a href="content/satzung.md">Unsere Satzung</a></li>
+            <li><a href="content/beitritt.md">Beitrittserklärung</a></li>
+          </ul>
+        </article>
+        <article>
+          <h3>Spenden</h3>
+          <p>
+            Your donations help us purchase tools, seeds, soil, and educational
+            materials. Every contribution directly supports the garden and our
+            community programs.
+          </p>
+          <p>
+            <strong>Examples of impact:</strong><br />
+            $15 provides seeds for an entire season’s planting.<br />
+            $40 equips a new volunteer with tools and gloves.<br />
+            $100 sponsors a children’s garden workshop.
+          </p>
+        </article>
+      </div>
+    </section>
+
+    <hr />
+
+    <!-- Contact / simple form -->
+    <section id="contact">
+      <h2>Contact Us</h2>
+      <p>
+        Have questions, ideas, or want to partner with us? Send us a message
+        and we’ll get back to you as soon as we can.
+      </p>
+      <form>
+        <div class="grid">
+          <label>
+            Name
+            <input type="text" name="name" placeholder="Your name" required />
+          </label>
+          <label>
+            Email
+            <input type="email" name="email" placeholder="you@example.org" required />
+          </label>
+        </div>
+        <label>
+          Message
+          <textarea name="message" rows="4" placeholder="How would you like to get involved?"></textarea>
+        </label>
+        <button type="submit">Send message</button>
+      </form>
+    </section>
+  </main>
+
+  <!-- Fixed info window 
+  <aside class="info-window">
+    <article>
+      <header>
+        <strong>Support the Garden Today</strong>
+      </header>
+      <p>
+        We’re raising funds for more raised beds and accessible pathways so all
+        neighbors can enjoy the garden. Every bit helps.
+      </p>
+      <p>
+        <small>Next volunteer day: Saturday 10:00–13:00 at Oak Street Lot</small>
+      </p>
+      <footer>
+        <div class="grid">
+          <a href="#get-involved" role="button" class="secondary">Volunteer</a>
+          <a href="#get-involved" role="button">Donate</a>
+        </div>
+      </footer>
+    </article>
+  </aside>-->
+</body>
+</html>
