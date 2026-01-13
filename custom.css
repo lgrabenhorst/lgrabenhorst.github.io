@@ -1,5 +1,5 @@
 :root {
-    --pico-font-family-sans-serif: Inter, system-ui, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, Helvetica, Arial, "Helvetica Neue", sans-serif, var(--pico-font-family-emoji);
+    --pico-font-family-sans-serif: Fira Sans, Inter, system-ui, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, Helvetica, Arial, "Helvetica Neue", sans-serif, var(--pico-font-family-emoji);
     --pico-font-size: 92.5%;
     /* Original: 100% */
     --pico-line-height: 1.25;
@@ -72,14 +72,14 @@ header.container {
     }
 }
 
+
 h1,
 h2,
 h3,
 h4,
 h5,
 h6 {
-    --pico-font-family: Agbalumo;
-    --pico-font-weight: 200;
+    --pico-font-family: Lato;
     /* Original: 700 */
 }
 
@@ -122,4 +122,21 @@ header nav ul li {
 header nav a, 
 header nav strong {
   line-height: 1; /* Tightens the text vertical space */
+}
+
+
+.lato-bold {
+  font-family: "Lato", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+.fira-sans-regular {
+  font-family: "Fira Sans", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+.londrina-shadow-regular {
+  font-family: "Londrina Shadow", sans-serif;
+  font-weight: 400;
+  font-style: normal;
 }
