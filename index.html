@@ -13,7 +13,6 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Fira+Sans&family=Lato:wght@700&family=Londrina+Shadow&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="custom.css">
-</head>
 <body>
   <!-- Header / Navigation -->
   <header class="container">
@@ -27,6 +26,7 @@
         <li><a href="#projects">Projekte</a></li>
         <li><a href="#get-involved">Mitmachen</a></li>
         <li><a href="#contact" role="button">Kontakt</a></li>
+        <li><div id="google_translate_element"></div></li>
       </ul>
     </nav>
   </header>
@@ -35,7 +35,7 @@
   <main class="container narrow-container">
     <!-- Hero / Intro -->
     <section id="about">
-      <h1>🌸🌻 Herzlich willkommen auf unserer Seite! 🌾🌳</h1>
+      <h1 class="centered-heading">🌸🌻 Herzlich willkommen auf unserer Seite! 🌾🌳</h1>
       <figure class="half-width-center">
         <img src="content/kenan-kitchen-Bbq3H7eGids-unsplash.jpg" alt="A test image.">
         <figcaption>
@@ -269,5 +269,14 @@
       </footer>
     </article>
   </aside>-->
+<script type="text/javascript">
+function googleTranslateElementInit() {
+  new google.translate.TranslateElement({
+    pageLanguage: 'de', 
+    layout: google.translate.TranslateElement.InlineLayout.SIMPLE
+  }, 'google_translate_element');
+}
+</script>
+<script type="text/javascript" src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
 </body>
 </html>
