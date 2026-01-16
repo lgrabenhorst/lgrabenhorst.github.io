@@ -146,3 +146,24 @@ header nav strong {
   font-weight: 400;
   font-style: normal;
 }
+@media (max-width: 768px) {
+  /* Allow the main nav container to wrap */
+  nav {
+    flex-direction: column;
+    align-items: center;
+    height: auto;
+  }
+
+  /* Allow the lists inside the nav to wrap and center them */
+  nav ul {
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 0;
+    margin-bottom: var(--pico-spacing);
+  }
+
+  /* Give the list items some breathing room when they wrap */
+  nav ul li {
+    padding: 0.25rem 0.5rem;
+  }
+}
